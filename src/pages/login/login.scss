@@ -1,0 +1,68 @@
+.login-page {
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    border-radius: 20px;
+    padding: 20px;
+    background: #cccccc;
+    text-align: center;
+
+    .lbl-login {
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .lbl-copyright {
+        font-size: small;
+        margin-top: 15px;
+        display: block;
+        color: gray;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        margin: 15px;
+        padding: 20px;
+
+
+        $input-height: 40px;
+        $input-bg-color: rgb(232, 240, 254);
+        $input-focus-outline: 1px solid rgb(211, 215, 255);
+
+        .input-username {
+            width: 100%;
+            height: $input-height;
+
+            background-color: $input-bg-color;
+            border-radius: 10px 10px 0 0;
+            border-color: transparent;
+
+            &:focus {
+                outline: $input-focus-outline;
+            }
+        }
+
+        .input-password {
+            width: 100%;
+            height: $input-height;
+
+            background-color: $input-bg-color;
+            border-radius: 0 0 10px 10px;
+            border-color: transparent;
+
+            &:focus {
+                outline: $input-focus-outline;
+            }
+        }
+
+        .btn-login {
+            width: 100%;
+            margin-top: 25px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+    }
+}

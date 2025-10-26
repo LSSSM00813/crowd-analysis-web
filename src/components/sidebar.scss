@@ -1,0 +1,23 @@
+.sidebar {
+    $sidebar-background: lightblue;
+
+
+    height: 100%;
+    background-color: $sidebar-background;
+
+    .sidebar-title {
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bold;
+
+        // background-color: black;
+    }
+
+    .sidebar-item {
+        padding: 10px;
+
+        &:hover {
+            background-color: darken($sidebar-background, 10%);
+        }
+    }
+}
