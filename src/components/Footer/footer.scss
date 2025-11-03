@@ -1,0 +1,10 @@
+.footer {
+    display: none;
+    background-color: lightblue;
+    justify-content: center;
+
+    // 幅が500px以下に時に表示させる
+    @media (max-width: 500px) {
+        display: flex;
+    }
+}

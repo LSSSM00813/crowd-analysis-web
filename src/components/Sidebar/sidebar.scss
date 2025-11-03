@@ -1,0 +1,18 @@
+.sidebar {
+    $sidebar-background: lightblue;
+
+
+    height: 100%;
+    background-color: $sidebar-background;
+
+    .sidebar-title {
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    // 幅が500px以下の場合は表示しない
+    @media (max-width: 500px) {
+        display: none;
+    }
+}

@@ -1,4 +1,14 @@
 .user-layout {
-    display: flex;
     height: 100vh;
+    display: flex;
+    flex-flow: column;
+
+    .flex-box {
+        display: flex;
+        flex: 1;
+
+        .content {
+            flex: 1;
+        }
+    }
 }

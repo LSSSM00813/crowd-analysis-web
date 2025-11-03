@@ -40,6 +40,12 @@ npm install sass
 npm install -D sass-embedded
 ```
 
+# アイコン
+react-iconsを使用しています
+```powershell
+npm install react-icons
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

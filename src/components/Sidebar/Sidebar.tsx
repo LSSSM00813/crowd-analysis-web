@@ -1,6 +1,7 @@
 import React from "react";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 import "./sidebar.scss";
+import SidebarItem from "./SidebarItem";
 
 interface SidebarProps {
   mode: "user" | "admin";
@@ -16,11 +17,11 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
     <div className="sidebar">
       <div className="sidebar-title">{title}</div>
       <li>
-        <div className="sidebar-item">ダッシュボード</div>
-        <div className="sidebar-item">混雑状況</div>
-        <div className="sidebar-item">店舗情報設定</div>
-        <div className="sidebar-item">設定</div>
-        <div className="sidebar-item" onClick={logout}>ログアウト</div>
+        <SidebarItem title="ダッシュボード" />
+        <SidebarItem title="混雑状況" />
+        <SidebarItem title="店舗情報設定" />
+        <SidebarItem title="設定" />
+        <SidebarItem title="ログアウト" onClick={logout} />
       </li>
     </div>
   );
