@@ -8,15 +8,15 @@ import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Dashboard from "../pages/user/Dashboard";
 import Setting from "../pages/admin/Setting";
 import AuthLayout from "../layouts/AuthLayout/AuthLayout";
+import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
 
 export default function AppRouter(): React.JSX.Element {
   return (
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-
           {/* ログイン */}
-          <Route path="/" element={<AuthLayout />} >
+          <Route path="/" element={<AuthLayout />}>
             <Route index element={<Login />} />
             <Route path="/login" element={<Login />} />
           </Route>
@@ -36,6 +36,8 @@ export default function AppRouter(): React.JSX.Element {
               </RequireAuth>
             }
           >
+            <Route index element={<CrowdSituation />} />
+            <Route path="crowd-situation" element={<CrowdSituation />} />
             <Route path="setting" element={<Setting />} />
           </Route>
         </Routes>

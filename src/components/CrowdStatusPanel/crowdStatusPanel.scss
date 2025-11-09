@@ -1,0 +1,21 @@
+.crowd-status-panel {
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #ccc;
+
+    .title {
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .icon {
+        font-size: 5rem;
+        margin: 10px 0px 5px 0px;
+    }
+
+    .status {
+        margin-bottom: 10px;
+    }
+}

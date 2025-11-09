@@ -1,11 +1,9 @@
 .sidebar {
-    $sidebar-background: lightblue;
-
-
     height: 100%;
-    background-color: $sidebar-background;
+    background-color: #007EA1;
 
     .sidebar-title {
+        color: white;
         padding: 10px;
         font-size: 30px;
         font-weight: bold;

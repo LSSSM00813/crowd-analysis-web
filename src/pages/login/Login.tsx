@@ -1,13 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
+import { useState } from "react";
 import "./login.scss";
 import { INFO } from "../../util/logger";
+import { MdOutlineArrowRight } from "react-icons/md";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 function Login() {
   const { isAuthenticated, login } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogin = (event: React.FormEvent) => {
+  // ユーザー画面へ遷移
+  const PageToUser = (event: React.FormEvent) => {
     login();
     if (isAuthenticated) {
       INFO("navigate to /user/dashboard");
@@ -16,23 +21,65 @@ function Login() {
     event?.preventDefault();
   };
 
+  // 管理者画面へ遷移
+  const PageToAdmin = (event: React.FormEvent) => {
+    login();
+    if (isAuthenticated) {
+      INFO("navigate to /admin/dashboard");
+      navigate("/admin");
+    }
+    event?.preventDefault();
+  };
+
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
   return (
     <>
-      <div className="login-page">
-        <div>
-          <label className="lbl-login">ログイン</label>
-          <form onSubmit={handleLogin}>
-            <div>
-              <input className="input-username" type="text" placeholder="ユーザID" />
+      <div className="page-login">
+        <div className="login-container">
+          <form onSubmit={PageToUser}>
+            <label className="lbl-login">ログイン</label>
+
+            <label>ユーザーID</label>
+            <input className="input-username" type="text" required />
+
+            <label>パスワード</label>
+            <div className="input-password-container">
+              <input
+                className="input-password"
+                required
+                type={isPasswordVisible ? "text" : "password"}
+              />
+
+              {isPasswordVisible ? (
+                <FaEyeSlash onClick={() => setIsPasswordVisible(false)} />
+              ) : (
+                <FaEye onClick={() => setIsPasswordVisible(true)} />
+              )}
             </div>
-            <div>
-              <input className="input-password" type="password" placeholder="パスワード" />
+
+            <div className="link-forgot-password">
+              <Link to="/user" className="link-forgot-password">
+                パスワードをお忘れですか?
+              </Link>
             </div>
-            <div>
-              <input className="btn-login" type="submit" value="ログイン" />
+
+            <label className="check-remember">
+              <input type="checkbox" />
+              ログイン情報を記録する
+            </label>
+
+            <div className="btn-login-container">
+              <button className="btn-login" type="submit">
+                ログイン
+              </button>
+              <MdOutlineArrowRight />
             </div>
           </form>
-          <label className="lbl-copyright">© SHARP CORPORATION</label>
+
+          <button className="btn-goto-admin" onClick={(e) => PageToAdmin(e)}>
+            管理者画面へ
+          </button>
         </div>
       </div>
     </>

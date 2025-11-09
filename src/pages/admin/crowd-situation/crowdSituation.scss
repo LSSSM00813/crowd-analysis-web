@@ -1,0 +1,20 @@
+.page-crowd-situation {
+    padding: 20px;
+
+    .crowd-level-bar {
+        width: 100%;
+
+        .crowd-level-bar-item {
+            width: 100%;
+        }
+    }
+
+    .crowd-status-panels {
+        display: flex;
+
+        .crowd-status-panel {
+            flex: 1;
+            margin: 10px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.crowd-level-bar {
+    display: flex;
+    align-items: center;
+
+    .lbl-empty {
+        margin-right: 10px;
+    }
+
+    .lbl-crowd {
+        margin-left: 10px;
+    }
+}

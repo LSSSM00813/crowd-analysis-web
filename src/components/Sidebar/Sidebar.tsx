@@ -1,15 +1,13 @@
 import React from "react";
-import { useAuth } from "../../contexts/AuthContext";
 import "./sidebar.scss";
-import SidebarItem from "./SidebarItem";
+import SidebarItem, { type SidebarItemProps } from "./SidebarItem";
 
 interface SidebarProps {
   mode: "user" | "admin";
+  items: SidebarItemProps[];
 }
 
 const Sidebar: React.FC<SidebarProps> = (props) => {
-  const { logout } = useAuth();
-
   // const backgroundColor = props.mode === "admin" ? "#333" : "#fff";
   const title = props.mode === "admin" ? "Admin Sidebar" : "User Sidebar";
 
@@ -17,11 +15,13 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
     <div className="sidebar">
       <div className="sidebar-title">{title}</div>
       <li>
-        <SidebarItem title="ダッシュボード" />
-        <SidebarItem title="混雑状況" />
-        <SidebarItem title="店舗情報設定" />
-        <SidebarItem title="設定" />
-        <SidebarItem title="ログアウト" onClick={logout} />
+        {props.items?.map((item: SidebarItemProps) => (
+          <SidebarItem
+            title={item.title}
+            icon={item.icon}
+            onClick={item.onClick}
+          />
+        ))}
       </li>
     </div>
   );

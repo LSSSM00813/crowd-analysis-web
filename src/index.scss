@@ -1,6 +1,44 @@
+@use 'sass:color';
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Dives+Akuru&display=swap');
+
 
 body {
     margin: 0px;
     font-family: "Noto Sans JP", sans-serif;
+}
+
+button {
+    $btn-bg-color: #007EA1;
+
+    padding: 8px;
+
+    background-color: $btn-bg-color;
+    border: none;
+    border-radius: 2px;
+
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+
+    // テキストのコピー防止
+    user-select: none;
+
+    // hover時には少し暗くする
+    &:hover {
+        background-color: color.adjust($btn-bg-color, $lightness: -5%);
+    }
+
+    &:active {
+        background-color: color.adjust($btn-bg-color, $lightness: -10%);
+    }
+}
+
+a {
+    color: #007EA1;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

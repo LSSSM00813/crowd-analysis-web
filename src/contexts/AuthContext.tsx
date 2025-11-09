@@ -34,7 +34,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = (props) => {
 };
 
 export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) throw new Error("useAuth must be used within an AuthProvider");
+  const context: AuthContextType | undefined = useContext(AuthContext);
+  if (!context) throw new Error("useAuthはAuthProviderの内で使用してください");
   return context;
 };
