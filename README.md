@@ -1,3 +1,11 @@
+# 開発環境構築
+nodejsのプロキシ設定
+プロキシサーバ(例):http://proxy-example.jp:3080
+```powershell
+npm config set proxy http://{氏名コード}:{Winドメイン}@proxy-example.jp:3080
+npm config set https-proxy http://{氏名コード}:{Winドメイン}@proxy-example.jp:3080
+```
+
 # プロジェクト作成方法
 ```powershell
 npx create-vite@latest
