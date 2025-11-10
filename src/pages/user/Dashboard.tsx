@@ -70,7 +70,7 @@ const Dashboard = () => {
     <>
       <div>ダッシュボード</div>
       <Line options={options} data={data} />
-      <QRCodeCanvas value={"aaa"} size={200} />
+      <QRCodeCanvas value={"aaa"} size={200} />      
     </>
   );
 };

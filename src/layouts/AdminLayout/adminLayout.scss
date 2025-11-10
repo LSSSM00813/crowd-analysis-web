@@ -1,21 +1,32 @@
 .admin-layout {
-    height: 100vh;
+    position: relative;
     display: flex;
     flex-flow: column;
 
+    position: relative;
+    height: 100vh;
+
+
     .flex-box {
         display: flex;
-        flex: 0;
-        height: 100vh;
+        flex: 1;
+
+        .sidebar {
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+        }
 
         .content {
-            // height: 100vh;
             flex: 1;
-            overflow-y: auto;
+            overflow-y: scroll;
         }
+    }
 
-        .footer {
-            flex-shrink: 0;
-        }
+    .footer {
+        position: sticky;
+        bottom: 0px;
+        width: 100%;
     }
 }

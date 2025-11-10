@@ -1,15 +1,32 @@
 .user-layout {
-    height: 100vh;
+    position: relative;
     display: flex;
     flex-flow: column;
+
+    position: relative;
+    height: 100vh;
+
 
     .flex-box {
         display: flex;
         flex: 1;
 
+        .sidebar {
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+        }
+
         .content {
             flex: 1;
             overflow-y: scroll;
         }
+    }
+
+    .footer {
+        position: sticky;
+        bottom: 0px;
+        width: 100%;
     }
 }
