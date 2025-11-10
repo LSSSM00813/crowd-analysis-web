@@ -9,6 +9,7 @@ import {
   Legend,
   type ChartOptions,
 } from "chart.js";
+import { QRCodeCanvas } from "qrcode.react";
 import { Line } from "react-chartjs-2";
 
 ChartJS.register(
@@ -69,6 +70,7 @@ const Dashboard = () => {
     <>
       <div>ダッシュボード</div>
       <Line options={options} data={data} />
+      <QRCodeCanvas value={"aaa"} size={200} />
     </>
   );
 };

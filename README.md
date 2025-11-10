@@ -49,9 +49,14 @@ npm install -D sass-embedded
 ```
 
 # アイコン
-react-iconsを使用しています
+[react-icons](https://react-icons.github.io/react-icons)を使用しています
 ```powershell
 npm install react-icons
+```
+
+# QRCode
+```powershell
+npm install qrcode.react
 ```
 
 # React + TypeScript + Vite
