@@ -5,10 +5,12 @@ import { AuthProvider } from "../contexts/AuthContext";
 import RequireAuth from "../contexts/RequireAuth";
 import UserLayout from "../layouts/UserLayout/UserLayout";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
-import Dashboard from "../pages/user/Dashboard";
+import Dashboard from "../pages/user/dashboard/Dashboard";
 import Setting from "../pages/admin/Setting";
 import AuthLayout from "../layouts/AuthLayout/AuthLayout";
 import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
+import { Search } from "../pages/user/search/Search";
+import { MyQR } from "../pages/user/myqr/myqr";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -25,6 +27,9 @@ export default function AppRouter(): React.JSX.Element {
           <Route path="/user" element={<UserLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="search" element={<Search />} />
+            <Route path="myqr" element={< MyQR />} />
+            <Route path="setting" element={<Setting />} />
           </Route>
 
           {/* 管理者用ルーティング */}
