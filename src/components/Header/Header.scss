@@ -1,0 +1,74 @@
+@use "sass:color";
+
+.header {
+    $bg-color: #007EA1;
+
+    // 初期状態では非表示
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+
+    color: white;
+    font-size: large;
+    font-weight: bold;
+
+    // 幅が500px以下に時に表示させる
+    @media (max-width: 500px) {
+        display: flex;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px;
+        background-color: $bg-color;
+
+        .header-left,
+        .header-center {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .btn-menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: flex-end;
+
+                margin-right: 10px;
+                border-radius: 50px;
+
+                background-color: $bg-color;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: color.adjust($bg-color, $lightness: -5%);
+                }
+
+                &:active {
+                    background-color: color.adjust($bg-color, $lightness: -10%);
+                }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

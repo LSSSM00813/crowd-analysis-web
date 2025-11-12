@@ -4,12 +4,16 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Footer from "../../components/Footer/Footer";
 import { useAuth } from "../../contexts/AuthContext";
 import { WiCloudy } from "react-icons/wi";
+import { Header } from "../../components/Header/Header";
 
 const UserLayout: React.FC = () => {
   const { logout } = useAuth();
 
   return (
     <div className="user-layout">
+
+      <Header/>
+
       <div className="flex-box">
         <Sidebar
           mode="user"
@@ -25,6 +29,7 @@ const UserLayout: React.FC = () => {
           <Outlet />
         </div>
       </div>
+      
       <Footer />
     </div>
   );

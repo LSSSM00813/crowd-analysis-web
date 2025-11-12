@@ -11,6 +11,7 @@ import {
 } from "chart.js";
 import { QRCodeCanvas } from "qrcode.react";
 import { Line } from "react-chartjs-2";
+import { useNavigate } from "react-router-dom";
 
 ChartJS.register(
   CategoryScale,
@@ -23,6 +24,8 @@ ChartJS.register(
 );
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
   const options: ChartOptions<"line"> = {
     responsive: true,
     plugins: {
@@ -70,7 +73,13 @@ const Dashboard = () => {
     <>
       <div>ダッシュボード</div>
       <Line options={options} data={data} />
-      <QRCodeCanvas value={"aaa"} size={200} />      
+      <QRCodeCanvas value={"aaa"} size={200} />
+      <div>
+        <button onClick={() => navigate("../myqr")}>myQR</button>
+        <button onClick={() => navigate("../search")}>search</button>
+        <button onClick={() => navigate("../setting")}>setting</button>
+      </div>
+      {Array.from({ length: 50 }, (_, i) => (<div key={i}>aaa</div>))}
     </>
   );
 };

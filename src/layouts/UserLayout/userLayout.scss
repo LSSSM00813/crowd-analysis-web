@@ -4,8 +4,13 @@
     flex-flow: column;
 
     position: relative;
-    height: 100vh;
-
+    height: 100%;
+    
+    .header{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
 
     .flex-box {
         display: flex;
@@ -16,6 +21,7 @@
             position: sticky;
             top: 0;
             overflow: hidden;
+            list-style: none;
         }
 
         .content {
