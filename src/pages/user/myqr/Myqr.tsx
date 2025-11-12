@@ -1,7 +1,7 @@
 import "./myqr.scss"
 import { QRCodeSVG } from "qrcode.react"
 
-export const MyQR = () => {
+export const Myqr = () => {
     return (
         <div className="page-myqr">
             <QRCodeSVG value={"aaaa"} size={300} />

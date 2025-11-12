@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import "./UserLayout.scss";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Footer from "../../components/Footer/Footer";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../hooks/useAuth";
 import { WiCloudy } from "react-icons/wi";
 import { Header } from "../../components/Header/Header";
 
@@ -12,7 +12,7 @@ const UserLayout: React.FC = () => {
   return (
     <div className="user-layout">
 
-      <Header/>
+      <Header />
 
       <div className="flex-box">
         <Sidebar
@@ -29,7 +29,7 @@ const UserLayout: React.FC = () => {
           <Outlet />
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

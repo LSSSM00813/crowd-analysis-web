@@ -1,7 +1,7 @@
 // AppRouter.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../pages/login/Login";
-import { AuthProvider } from "../contexts/AuthContext";
+import { AuthProvider } from "../contexts/AuthContextProvider";
 import RequireAuth from "../contexts/RequireAuth";
 import UserLayout from "../layouts/UserLayout/UserLayout";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
@@ -10,7 +10,7 @@ import Setting from "../pages/admin/Setting";
 import AuthLayout from "../layouts/AuthLayout/AuthLayout";
 import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
 import { Search } from "../pages/user/search/Search";
-import { MyQR } from "../pages/user/myqr/myqr";
+import { Myqr } from "../pages/user/myqr/MyQR";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -28,7 +28,7 @@ export default function AppRouter(): React.JSX.Element {
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="search" element={<Search />} />
-            <Route path="myqr" element={< MyQR />} />
+            <Route path="myqr" element={< Myqr />} />
             <Route path="setting" element={<Setting />} />
           </Route>
 
