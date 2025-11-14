@@ -11,6 +11,7 @@ import AuthLayout from "../layouts/AuthLayout/AuthLayout";
 import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
 import { Search } from "../pages/user/search/Search";
 import { Myqr } from "../pages/user/myqr/MyQR";
+import { UserSetting } from "../pages/user/setting/Setting";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -29,7 +30,7 @@ export default function AppRouter(): React.JSX.Element {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="search" element={<Search />} />
             <Route path="myqr" element={< Myqr />} />
-            <Route path="setting" element={<Setting />} />
+            <Route path="setting" element={<UserSetting />} />
           </Route>
 
           {/* 管理者用ルーティング */}

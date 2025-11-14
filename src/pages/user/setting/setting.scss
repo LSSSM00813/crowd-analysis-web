@@ -1,0 +1,43 @@
+.page-user-setting {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+
+    padding: 10px;
+
+    .lbl-title {
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    select {
+        position: relative;
+        font-size: large;
+        border-radius: 0;
+
+        background-color: transparent;
+        border: 1px solid gray;
+        border-radius: 5px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &::after {
+            content: '>';
+            position: absolute;
+            right: 0.8em;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #333;
+            font-size: 2;
+        }
+    }
+
+    .btn-save {
+        margin-top: 20px;
+        // border-radius: 10px;
+
+    }
+}
