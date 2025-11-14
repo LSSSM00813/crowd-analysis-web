@@ -30,7 +30,13 @@ const UserLayout: React.FC = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer
+        items={[
+          { title: "QRコード", icon: <WiCloudy /> },
+          { title: "店舗一覧", icon: <WiCloudy /> },
+          { title: "お気に入り店舗", icon: <WiCloudy /> },
+        ]}
+      />
     </div>
   );
 };
