@@ -2,24 +2,27 @@
 
 .header {
     $bg-color: #007EA1;
+    z-index: 10;
+    position: relative;
 
     // 初期状態では非表示
     display: none;
     align-items: center;
     flex-direction: column;
 
-    width: 100%;
-    min-height: 50px;
+    // 幅が500px以下に時に表示させる
+    @media (max-width: 500px) {
+        display: flex;
+    }
+
+    width: 100%;    
+    height: auto;
     text-align: center;
 
     color: white;
     font-size: large;
     font-weight: bold;
-
-    // 幅が500px以下に時に表示させる
-    @media (max-width: 500px) {
-        display: flex;
-    }
+    user-select: none;
 
     .header-content {
         display: flex;
@@ -29,9 +32,12 @@
         padding-top: 5px;
         background-color: $bg-color;
 
-        .header-left,
-        .header-center {
+        .header-left {
             flex: 1;
+        }
+
+        .header-center {
+            flex: 3;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -72,7 +78,15 @@
     }
 
     .menu-content {
-        color: black;
-        text-align: right;
+        align-self: flex-end;
+        background-color: $bg-color;
+        
+        padding: 10px 15px 15px 15px;
+        border-radius: 0px 0px 0px 10px;
+
+        a {
+            text-align: center;
+            color: white;
+        }
     }
 }

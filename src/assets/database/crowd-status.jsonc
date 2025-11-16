@@ -1,0 +1,18 @@
+[
+  // crowed, normal, empty のいずれかを指定
+  { "id": 1, "men": "crowded", "women": "empty" },
+  { "id": 2, "men": "empty", "women": "empty" },
+  { "id": 3, "men": "crowded", "women": "empty" },
+  { "id": 4, "men": "crowded", "women": "empty" },
+  { "id": 5, "men": "crowded", "women": "empty" },
+  { "id": 6, "men": "normal", "women": "normal" },
+  { "id": 7, "men": "empty", "women": "crowded" },
+  { "id": 8, "men": "crowded", "women": "crowded" },
+  { "id": 9, "men": "normal", "women": "empty" },
+  { "id": 10, "men": "empty", "women": "normal" },
+  { "id": 11, "men": "crowded", "women": "normal" },
+  { "id": 12, "men": "normal", "women": "crowded" },
+  { "id": 13, "men": "empty", "women": "crowded" },
+  { "id": 14, "men": "normal", "women": "normal" },
+  { "id": 15, "men": "crowded", "women": "crowded" }
+]

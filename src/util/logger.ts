@@ -1,6 +1,6 @@
 type LogLevel = "INFO" | "WARN" | "ERROR" | "FATAL" | "DEBUG";
 
-export const INFO = (message: string) => {
+export const INFO = (message: string | boolean) => {
   LOG("INFO", message);
 };
 
@@ -20,7 +20,14 @@ export const DEBUG = (message: string) => {
   LOG("DEBUG", message);
 };
 
-export const LOG = (level: LogLevel, message: string) => {
+export const LOG = (level: LogLevel, arg: string | boolean) => {
+  let message = "";
+  if (typeof arg === "boolean") {
+    message = arg ? "true" : "false";
+  } else {
+    message = arg;
+  }
+
   const dt = new Date();
   const logStr = `${dt.toISOString()} ${level} ${message}`;
 

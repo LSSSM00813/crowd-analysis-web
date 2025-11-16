@@ -15,8 +15,8 @@ function Login() {
   const PageToUser = (event: React.FormEvent) => {
     login();
     if (isAuthenticated) {
-      INFO("navigate to /user/dashboard");
-      navigate("/user/dashboard");
+      INFO("navigate to /user/myqr");
+      navigate("/user/myqr");
     }
     event?.preventDefault();
   };
@@ -34,55 +34,53 @@ function Login() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (
-    <>
-      <div className="page-login">
-        <div className="login-container">
-          <form onSubmit={PageToUser}>
-            <label className="lbl-login">ログイン</label>
+    <div className="page-login">
+      <div className="login-container">
+        <form onSubmit={PageToUser}>
+          <label className="lbl-login">ログイン</label>
 
-            <label>ユーザーID</label>
-            <input className="input-username" type="text" required />
+          <label>ユーザーID</label>
+          <input className="input-username" type="text" required />
 
-            <label>パスワード</label>
-            <div className="input-password-container">
-              <input
-                className="input-password"
-                required
-                type={isPasswordVisible ? "text" : "password"}
-              />
+          <label>パスワード</label>
+          <div className="input-password-container">
+            <input
+              className="input-password"
+              required
+              type={isPasswordVisible ? "text" : "password"}
+            />
 
-              {isPasswordVisible ? (
-                <FaEyeSlash onClick={() => setIsPasswordVisible(false)} />
-              ) : (
-                <FaEye onClick={() => setIsPasswordVisible(true)} />
-              )}
-            </div>
+            {isPasswordVisible ? (
+              <FaEyeSlash onClick={() => setIsPasswordVisible(false)} />
+            ) : (
+              <FaEye onClick={() => setIsPasswordVisible(true)} />
+            )}
+          </div>
 
-            <div className="link-forgot-password">
-              <Link to="/user" className="link-forgot-password">
-                パスワードをお忘れですか?
-              </Link>
-            </div>
+          <div className="link-forgot-password">
+            <Link to="/user" className="link-forgot-password">
+              パスワードをお忘れですか?
+            </Link>
+          </div>
 
-            <label className="check-remember">
-              <input type="checkbox" />
-              ログイン情報を記録する
-            </label>
+          <label className="check-remember">
+            <input type="checkbox" />
+            ログイン情報を記録する
+          </label>
 
-            <div className="btn-login-container">
-              <button className="btn-login" type="submit">
-                ログイン
-              </button>
-              <MdOutlineArrowRight />
-            </div>
-          </form>
+          <div className="btn-login-container">
+            <button className="btn-login" type="submit">
+              ログイン
+            </button>
+            <MdOutlineArrowRight />
+          </div>
+        </form>
 
-          <button className="btn-goto-admin" onClick={(e) => PageToAdmin(e)}>
-            管理者画面へ
-          </button>
-        </div>
+        <button className="btn-goto-admin" onClick={(e) => PageToAdmin(e)}>
+          管理者画面へ
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 

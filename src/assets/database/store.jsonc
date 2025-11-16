@@ -1,0 +1,17 @@
+[
+  { "id": 1, "store_name": "店舗A", "isFavorite": true },
+  { "id": 2, "store_name": "店舗B", "isFavorite": false },
+  { "id": 3, "store_name": "店舗C", "isFavorite": false },
+  { "id": 4, "store_name": "店舗D", "isFavorite": true },
+  { "id": 5, "store_name": "店舗E", "isFavorite": false },
+  { "id": 6, "store_name": "店舗F", "isFavorite": false },
+  { "id": 7, "store_name": "店舗G", "isFavorite": true },
+  { "id": 8, "store_name": "店舗H", "isFavorite": false },
+  { "id": 9, "store_name": "店舗I", "isFavorite": false },
+  { "id": 10, "store_name": "店舗J", "isFavorite": false },
+  { "id": 11, "store_name": "店舗K", "isFavorite": false },
+  { "id": 12, "store_name": "店舗L", "isFavorite": false },
+  { "id": 13, "store_name": "店舗M", "isFavorite": false },
+  { "id": 14, "store_name": "店舗N", "isFavorite": false },
+  { "id": 15, "store_name": "店舗O", "isFavorite": false }
+]

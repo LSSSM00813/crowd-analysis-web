@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 3000,
+    // ポート80にすればWebブラウザ側でポート指定する必要がなくなる
+    // httpの場合80,httpsの場合は443を指定する
+    port: 80,
   },
 });

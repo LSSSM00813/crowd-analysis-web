@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 3,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Tuesday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Wednesday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Thursday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Friday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Saturday", "start": "09:00", "end": "23:00:00" },
+      { "day_of_week": "Sunday", "start": "09:00", "end": "23:00:00" }
+    ]
+  },
+  {
+    "id": 4,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 5,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 6,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 7,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 8,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 9,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 10,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 11,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 12,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 13,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 14,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  },
+  {
+    "id": 15,
+    "business-time": [
+      { "day_of_week": "Monday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Tuesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Wednesday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Thursday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Friday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Saturday", "start": "10:00", "end": "02:00" },
+      { "day_of_week": "Sunday", "start": "10:00", "end": "02:00" }
+    ]
+  }
+]

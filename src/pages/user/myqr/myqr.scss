@@ -1,8 +1,13 @@
 .page-myqr {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+
+    .qr-code {
+        margin-top: 50px;
+    }
 
     .lbl-message {
         margin-top: 30px;

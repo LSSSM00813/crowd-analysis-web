@@ -1,18 +1,18 @@
-import StoreCard from "../../../components/StoreCard/StoreCard";
-import "./search.scss";
 import { MdSearch } from "react-icons/md";
-import stripJsonComments from "strip-json-comments";
+import "./favoriteStore.scss";
 import sampleData from "../../../assets/database/store.jsonc?raw";
+import stripJsonComments from "strip-json-comments";
 import { useState } from "react";
+import StoreCard from "../../../components/StoreCard/StoreCard";
 
-export const Search = () => {
+const FavoriteStore = () => {
   const [searchText, setSearchText] = useState("");
   const searchWords: string[] = searchText.split(" ");
 
   const data: any[] = JSON.parse(stripJsonComments(sampleData));
 
   return (
-    <div className="page-search">
+    <div className="page-favorite-store">
       <div className="main-content">
         <div className="search-input-area">
           <MdSearch />
@@ -27,6 +27,9 @@ export const Search = () => {
 
         <div className="store-cards">
           {data?.map((x: any) => {
+            // お気に入り登録されていなかったらnullで何も表示させない
+            if (!x.isFavorite) return null;
+            
             const storeName = x.store_name?.toLowerCase() ?? "";
 
             let matched;
@@ -38,7 +41,7 @@ export const Search = () => {
                 (word) => word && storeName.includes(word)
               );
             }
-            
+
             return matched ? (
               <StoreCard
                 key={x.id}
@@ -53,3 +56,5 @@ export const Search = () => {
     </div>
   );
 };
+
+export default FavoriteStore;

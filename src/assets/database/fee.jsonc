@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Tuesday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Wednesday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Thursday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Friday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Saturday", "adult": 1500, "child": 1000 },
+      { "day_of_week": "Sunday", "adult": 1500, "child": 1000 }
+    ]
+  },
+  {
+    "id": 2,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Tuesday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Wednesday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Thursday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Friday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Saturday", "adult": 1200, "child": 900 },
+      { "day_of_week": "Sunday", "adult": 1200, "child": 900 }
+    ]
+  },
+  {
+    "id": 3,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Tuesday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Wednesday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Thursday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Friday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Saturday", "adult": 1300, "child": 950 },
+      { "day_of_week": "Sunday", "adult": 1300, "child": 950 }
+    ]
+  },
+  {
+    "id": 4,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Tuesday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Wednesday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Thursday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Friday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Saturday", "adult": 1000, "child": 800 },
+      { "day_of_week": "Sunday", "adult": 1000, "child": 800 }
+    ]
+  },
+  {
+    "id": 5,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Tuesday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Wednesday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Thursday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Friday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Saturday", "adult": 1600, "child": 1100 },
+      { "day_of_week": "Sunday", "adult": 1600, "child": 1100 }
+    ]
+  },
+  {
+    "id": 6,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Tuesday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Wednesday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Thursday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Friday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Saturday", "adult": 1400, "child": 1000 },
+      { "day_of_week": "Sunday", "adult": 1400, "child": 1000 }
+    ]
+  },
+  {
+    "id": 7,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Tuesday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Wednesday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Thursday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Friday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Saturday", "adult": 1100, "child": 850 },
+      { "day_of_week": "Sunday", "adult": 1100, "child": 850 }
+    ]
+  },
+  {
+    "id": 8,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Tuesday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Wednesday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Thursday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Friday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Saturday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Sunday", "adult": 1250, "child": 950 }
+    ]
+  },
+  {
+    "id": 9,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Tuesday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Wednesday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Thursday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Friday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Saturday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Sunday", "adult": 1350, "child": 1000 }
+    ]
+  },
+  {
+    "id": 10,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Tuesday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Wednesday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Thursday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Friday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Saturday", "adult": 1500, "child": 950 },
+      { "day_of_week": "Sunday", "adult": 1500, "child": 950 }
+    ]
+  },
+  {
+    "id": 11,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Tuesday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Wednesday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Thursday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Friday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Saturday", "adult": 1150, "child": 850 },
+      { "day_of_week": "Sunday", "adult": 1150, "child": 850 }
+    ]
+  },
+  {
+    "id": 12,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Tuesday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Wednesday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Thursday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Friday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Saturday", "adult": 1450, "child": 1050 },
+      { "day_of_week": "Sunday", "adult": 1450, "child": 1050 }
+    ]
+  },
+  {
+    "id": 13,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Tuesday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Wednesday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Thursday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Friday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Saturday", "adult": 1550, "child": 1100 },
+      { "day_of_week": "Sunday", "adult": 1550, "child": 1100 }
+    ]
+  },
+  {
+    "id": 14,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Tuesday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Wednesday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Thursday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Friday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Saturday", "adult": 1250, "child": 950 },
+      { "day_of_week": "Sunday", "adult": 1250, "child": 950 }
+    ]
+  },
+  {
+    "id": 15,
+    "fee": [
+      { "day_of_week": "Monday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Tuesday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Wednesday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Thursday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Friday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Saturday", "adult": 1350, "child": 1000 },
+      { "day_of_week": "Sunday", "adult": 1350, "child": 1000 }
+    ]
+  }
+]

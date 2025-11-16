@@ -1,18 +1,16 @@
 .user-layout {
     position: relative;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    height: 100vh;
 
-    position: relative;
-    height: 100%;
-    
-    .header{
-        position: sticky;
-        top: 0px;
-        width: 100%;
-    }
+    // ヘッダーを固定化するならコメント解除
+    // .header {
+    //     position: sticky;
+    //     top: 0;
+    // }
 
-    .flex-box {
+    .layout-flex-box {
         display: flex;
         flex: 1;
 
@@ -26,14 +24,12 @@
 
         .content {
             flex: 1;
-            height: 100vh;
-            overflow-y: scroll;
+            background-color: white;
         }
     }
 
     .footer {
         position: sticky;
-        bottom: 0px;
-        width: 100%;
+        bottom: 0;
     }
 }
