@@ -6,7 +6,7 @@ import RequireAuth from "../contexts/RequireAuth";
 import UserLayout from "../layouts/UserLayout/UserLayout";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Dashboard from "../pages/user/dashboard/Dashboard";
-import Setting from "../pages/admin/Setting";
+import Setting from "../pages/admin/admin-setting/Setting";
 import AuthLayout from "../layouts/AuthLayout/AuthLayout";
 import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
 import { Search } from "../pages/user/search/Search";
@@ -14,6 +14,7 @@ import { Myqr } from "../pages/user/myqr/Myqr";
 import { UserSetting } from "../pages/user/setting/UserSetting";
 import FavoriteStore from "../pages/user/favorite-store/FavoriteStore";
 import Store from "../pages/user/store/Store";
+import { CrowdData } from "../pages/admin/crowd-data/CrowdData";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -52,6 +53,7 @@ export default function AppRouter(): React.JSX.Element {
           >
             <Route index element={<CrowdSituation />} />
             <Route path="crowd-situation" element={<CrowdSituation />} />
+            <Route path="crowd-data" element={<CrowdData />} />
             <Route path="setting" element={<Setting />} />
           </Route>
         </Routes>

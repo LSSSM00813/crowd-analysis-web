@@ -10,7 +10,7 @@ const AdminLayout: React.FC = () => {
 
   return (
     <div className="admin-layout">
-      <div className="flex-box">
+      <div className="layout-flex-box">
         <Sidebar
           mode="admin"
           items={[
@@ -19,8 +19,16 @@ const AdminLayout: React.FC = () => {
               icon: <WiCloudy />,
               onClick: () => navigate("/admin/crowd-situation"),
             },
-            { title: "混雑データ", icon: <BsClipboard2Data /> },
-            { title: "管理用", icon: <MdOutlineContentPasteSearch /> },
+            {
+              title: "混雑データ",
+              icon: <BsClipboard2Data />,
+              onClick: () => navigate("/admin/crowd-data")
+            },
+            {
+              title: "管理用",
+              icon: <MdOutlineContentPasteSearch />,
+              onClick: () => navigate("/admin/setting")
+            },
             {
               title: "ログアウト",
               icon: <MdOutlineLogout />,

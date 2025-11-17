@@ -1,24 +1,19 @@
-.page-crowd-situation {
+.page-crowd-data {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
 
-    .crowd-level-bar {
-        width: 100%;
+    height: 100%;
 
-        .crowd-level-bar-item {
-            width: 100%;
-        }
-    }
-
-    .crowd-status-panels {
+    .panel-horizontal {
         display: flex;
-
-        .crowd-status-panel {
-            flex: 1;
-            margin: 10px;
-        }
+        align-items: center;
+        // justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
-    table {
+    .crowd-table {
         width: 100%;
         border-collapse: collapse;
         margin-top: 24px;

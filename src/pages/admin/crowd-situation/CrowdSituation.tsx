@@ -37,31 +37,35 @@ const CrowdSituation = () => {
       </div>
 
       {/* サンプル */}
-      <table style={{ width: 100 + "%", marginTop: 20 + "px" }}>
-        <tr style={{ background: "#f0f0f0" }}>
-          <th>場所</th>
-          <th>営業時間</th>
-        </tr>
-        <tr>
-          <td>館内</td>
-          <td>10:00～24:00 (最終受付 22:00)</td>
-        </tr>
-        <tr>
-          <td>男湯</td>
-          <td>10:00～24:00 (最終受付 22:00)</td>
-        </tr>
-        <tr>
-          <td>女湯</td>
-          <td>10:00～24:00 (最終受付 22:00)</td>
-        </tr>
-        <tr>
-          <td>サウナ</td>
-          <td>10:00～24:00 (最終受付 22:00)</td>
-        </tr>
-        <tr>
-          <td>露天風呂</td>
-          <td>10:00～24:00 (最終受付 22:00)</td>
-        </tr>        
+      <table style={{ width: "100%", marginTop: "20px" }}>
+        <thead>
+          <tr style={{ background: "#f0f0f0" }}>
+            <th>場所</th>
+            <th>営業時間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>館内</td>
+            <td>10:00～24:00 (最終受付 22:00)</td>
+          </tr>
+          <tr>
+            <td>男湯</td>
+            <td>10:00～24:00 (最終受付 22:00)</td>
+          </tr>
+          <tr>
+            <td>女湯</td>
+            <td>10:00～24:00 (最終受付 22:00)</td>
+          </tr>
+          <tr>
+            <td>サウナ</td>
+            <td>10:00～24:00 (最終受付 22:00)</td>
+          </tr>
+          <tr>
+            <td>露天風呂</td>
+            <td>10:00～24:00 (最終受付 22:00)</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

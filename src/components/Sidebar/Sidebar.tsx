@@ -14,16 +14,14 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
   return (
     <div className="sidebar">
       <div className="sidebar-title">{title}</div>
-      <li>
-        {props.items?.map((item: SidebarItemProps) => (
-          <SidebarItem          
-            key={item.title}  // keyをしないとWarningが出るため追加
-            title={item.title}
-            icon={item.icon}
-            onClick={item.onClick}
-          />
-        ))}
-      </li>
+      {props.items?.map((item: SidebarItemProps) => (
+        <SidebarItem
+          key={item.title}  // keyをしないとWarningが出るため追加
+          title={item.title}
+          icon={item.icon}
+          onClick={item.onClick}
+        />
+      ))}
     </div>
   );
 };
