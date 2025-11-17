@@ -8,6 +8,6 @@ export default defineConfig({
     host: true,
     // ポート80にすればWebブラウザ側でポート指定する必要がなくなる
     // httpの場合80,httpsの場合は443を指定する
-    port: 80,
+    port: 3000,
   },
 });

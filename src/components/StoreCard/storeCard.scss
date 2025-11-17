@@ -1,19 +1,20 @@
 @use 'sass:color';
 
 $border-radius: 10px;
+$bg-color: white;
 
 .store-card {
-    background-color: white;
+    background-color: $bg-color;
     text-align: start;
     border-radius: $border-radius;
     box-shadow: 0px 0px 10px 2px #00000044;
 
     &:hover {
-        background-color: adjust-color(lightgray, $lightness: -2%);
+        background-color: color.adjust($bg-color, $lightness: -10%);
     }
 
     &:active {
-        background-color: adjust-color(lightgray, $lightness: -5%);
+        background-color: color.adjust($bg-color, $lightness: -15%);
     }
 
 
@@ -82,7 +83,7 @@ $border-radius: 10px;
             }
 
             .favorite-true {
-                color: yellow;                
+                color: yellow;
             }
 
             .favorite-false {
