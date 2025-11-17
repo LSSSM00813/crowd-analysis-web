@@ -31,6 +31,15 @@ function Login() {
     event?.preventDefault();
   };
 
+  const PageToStoreTablet = (event: React.FormEvent) => {
+    login();
+    if (isAuthenticated) {
+      INFO("navigate to /store-tablet/pageInit");
+      navigate("/store-tablet/pageInit");
+    }
+    event?.preventDefault();
+  };
+
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (
@@ -79,6 +88,13 @@ function Login() {
         <button className="btn-goto-admin" onClick={(e) => PageToAdmin(e)}>
           管理者画面へ
         </button>
+
+        {/* <button
+          className="btn-goto-store-tablet"
+          onClick={(e) => PageToStoreTablet(e)}
+        >
+          店舗用タブレット画面
+        </button> */}
       </div>
     </div>
   );

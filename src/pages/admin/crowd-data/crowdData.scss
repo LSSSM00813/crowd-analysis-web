@@ -1,14 +1,9 @@
 .page-crowd-data {
-    display: flex;
-    flex-direction: column;
     padding: 20px;
-
-    height: 100%;
 
     .panel-horizontal {
         display: flex;
         align-items: center;
-        // justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
     }

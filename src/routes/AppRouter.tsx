@@ -15,6 +15,9 @@ import { UserSetting } from "../pages/user/setting/UserSetting";
 import FavoriteStore from "../pages/user/favorite-store/FavoriteStore";
 import Store from "../pages/user/store/Store";
 import { CrowdData } from "../pages/admin/crowd-data/CrowdData";
+import StoreTabletLayout from "../layouts/StoreTabletLayout/StoreTabletLayout";
+import PageInit from "../pages/store-tablet/pageInit/PageInit";
+import EnterPage1 from "../pages/store-tablet/enter/page1/enterPage1";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -55,6 +58,17 @@ export default function AppRouter(): React.JSX.Element {
             <Route path="crowd-situation" element={<CrowdSituation />} />
             <Route path="crowd-data" element={<CrowdData />} />
             <Route path="setting" element={<Setting />} />
+          </Route>
+
+          <Route path="/store-tablet" element={<StoreTabletLayout />}>
+            <Route index element={<PageInit />} />
+            <Route path="pageInit" element={<PageInit />} />
+
+            <Route path="enter">
+              <Route index element={<EnterPage1 />} />
+              <Route path="page1" element={<EnterPage1 />} />
+            </Route>
+            <Route path="exit"></Route>
           </Route>
         </Routes>
       </BrowserRouter>
