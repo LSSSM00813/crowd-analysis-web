@@ -6,7 +6,6 @@ import RequireAuth from "../contexts/RequireAuth";
 import UserLayout from "../layouts/UserLayout/UserLayout";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Dashboard from "../pages/user/dashboard/Dashboard";
-import Setting from "../pages/admin/admin-setting/Setting";
 import AuthLayout from "../layouts/AuthLayout/AuthLayout";
 import CrowdSituation from "../pages/admin/crowd-situation/CrowdSituation";
 import { Search } from "../pages/user/search/Search";
@@ -18,6 +17,8 @@ import { CrowdData } from "../pages/admin/crowd-data/CrowdData";
 import StoreTabletLayout from "../layouts/StoreTabletLayout/StoreTabletLayout";
 import PageInit from "../pages/store-tablet/pageInit/PageInit";
 import EnterPage1 from "../pages/store-tablet/enter/page1/enterPage1";
+import StoreSetting from "../pages/admin/setting/store-setting/StoreSetting";
+import CrowdSetting from "../pages/admin/setting/crowd-setting/CrowdSetting";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -57,7 +58,10 @@ export default function AppRouter(): React.JSX.Element {
             <Route index element={<CrowdSituation />} />
             <Route path="crowd-situation" element={<CrowdSituation />} />
             <Route path="crowd-data" element={<CrowdData />} />
-            <Route path="setting" element={<Setting />} />
+            <Route path="setting">
+              <Route path="store-setting" element={<StoreSetting />} />
+              <Route path="crowd-setting" element={<CrowdSetting />} />
+            </Route>
           </Route>
 
           <Route path="/store-tablet" element={<StoreTabletLayout />}>
