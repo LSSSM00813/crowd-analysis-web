@@ -6,6 +6,8 @@ import { INFO } from "../../util/logger";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import ApiContoller from "../../util/Api/ApiController";
+import type { ApiBase } from "../../util/Api/ApiModels/ApiBase";
 
 function Login() {
   const { isAuthenticated, login } = useAuth();
@@ -89,6 +91,18 @@ function Login() {
           管理者画面へ
         </button>
 
+        <button
+          onClick={() => {
+            ApiContoller.GetResult().then((apiBase: ApiBase) => {
+              console.log(apiBase.result);
+            }, (error) => {
+              alert("API Error:" + error);
+            });
+          }}>
+
+          APIテスト用
+        </button>
+
         {/* <button
           className="btn-goto-store-tablet"
           onClick={(e) => PageToStoreTablet(e)}
@@ -96,7 +110,7 @@ function Login() {
           店舗用タブレット画面
         </button> */}
       </div>
-    </div>
+    </div >
   );
 }
 
