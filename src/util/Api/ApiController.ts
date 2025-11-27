@@ -7,6 +7,7 @@ class ApiContoller {
 
     static readonly BASE_URL = `http://${ApiContoller.HOST}:${ApiContoller.PORT}`;
 
+    // 仮APIメソッド
     static async GetResult(): Promise<ApiBase> {
         const api_url = "/api/result";
         const response = await axios.get(this.BASE_URL + api_url, {
