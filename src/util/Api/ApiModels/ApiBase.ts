@@ -2,7 +2,7 @@
 export class ApiBase {
     result: boolean;
 
-    constructor(result: boolean) {
-        this.result = result;
+    constructor(data: ApiBase) {
+        this.result = data.result;
     }
 }

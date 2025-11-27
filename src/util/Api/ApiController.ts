@@ -20,7 +20,7 @@ class ApiContoller {
                 _: new Date().getTime() // キャッシュ防止用ダミーパラメータ
             }
         });
-        return new ApiBase(response.data);
+        return new ApiBase(response.data as ApiBase);
     }
 }
 

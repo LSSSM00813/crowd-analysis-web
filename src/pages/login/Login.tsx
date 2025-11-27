@@ -7,7 +7,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import ApiContoller from "../../util/Api/ApiController";
-import type { ApiBase } from "../../util/Api/ApiModels/ApiBase";
+import { ApiBase } from "../../util/Api/ApiModels/ApiBase";
 
 function Login() {
   const { isAuthenticated, login } = useAuth();
@@ -43,6 +43,9 @@ function Login() {
   };
 
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  // apiテスト用
+  const [apiResult, setApiResult] = useState<ApiBase | null>(null);
 
   return (
     <div className="page-login">
@@ -91,25 +94,28 @@ function Login() {
           管理者画面へ
         </button>
 
-        <button style={{ marginTop:"10px",width: "100%" }}
-        onClick={() => {
-          ApiContoller.GetResult().then((apiBase: ApiBase) => {
-            console.log(apiBase.result);
-          }, (error) => {
-            alert("API Error:" + error);
-          });
-        }}>
+        <button style={{ marginTop: "10px", width: "100%" }}
+          onClick={() => {
+            ApiContoller.GetResult().then((apiBase: ApiBase) => {
+              console.log(apiBase);
+              console.log(apiBase.result);
+              setApiResult(apiBase);
+            }, (error) => {
+              alert("API Error:" + error);
+            });
+          }}>
 
-        APIテスト用
-      </button>
+          APIテスト用
+        </button>
 
-      {/* <button
+
+        {/* <button
           className="btn-goto-store-tablet"
           onClick={(e) => PageToStoreTablet(e)}
         >
           店舗用タブレット画面
         </button> */}
-    </div>
+      </div>
     </div >
   );
 }
