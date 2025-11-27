@@ -91,25 +91,25 @@ function Login() {
           管理者画面へ
         </button>
 
-        <button
-          onClick={() => {
-            ApiContoller.GetResult().then((apiBase: ApiBase) => {
-              console.log(apiBase.result);
-            }, (error) => {
-              alert("API Error:" + error);
-            });
-          }}>
+        <button style={{ marginTop:"10px",width: "100%" }}
+        onClick={() => {
+          ApiContoller.GetResult().then((apiBase: ApiBase) => {
+            console.log(apiBase.result);
+          }, (error) => {
+            alert("API Error:" + error);
+          });
+        }}>
 
-          APIテスト用
-        </button>
+        APIテスト用
+      </button>
 
-        {/* <button
+      {/* <button
           className="btn-goto-store-tablet"
           onClick={(e) => PageToStoreTablet(e)}
         >
           店舗用タブレット画面
         </button> */}
-      </div>
+    </div>
     </div >
   );
 }
