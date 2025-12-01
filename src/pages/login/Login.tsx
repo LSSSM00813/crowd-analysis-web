@@ -109,12 +109,12 @@ function Login() {
         </button>
 
 
-        {/* <button
+        <button
           className="btn-goto-store-tablet"
           onClick={(e) => PageToStoreTablet(e)}
         >
           店舗用タブレット画面
-        </button> */}
+        </button>
       </div>
     </div >
   );
