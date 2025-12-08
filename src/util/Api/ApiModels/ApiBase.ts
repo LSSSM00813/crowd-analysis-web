@@ -1,8 +1,12 @@
-// Apiの基本モデル
-export class ApiBase {
-    result: boolean;
+// APIモデル
+export class ApiRequestBase<T> {
+  result: boolean = false;
+  message: string = "";
+  timestamp: Date = new Date();
+  // APIリクエストに応じて変化する
+  data: T;
 
-    constructor(data: ApiBase) {
-        this.result = data.result;
-    }
+  constructor(data: T) {
+    this.data = data;
+  }
 }

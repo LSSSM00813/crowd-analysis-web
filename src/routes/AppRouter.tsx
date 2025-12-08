@@ -16,9 +16,11 @@ import Store from "../pages/user/store/Store";
 import { CrowdData } from "../pages/admin/crowd-data/CrowdData";
 import StoreTabletLayout from "../layouts/StoreTabletLayout/StoreTabletLayout";
 import PageInit from "../pages/store-tablet/pageInit/PageInit";
-import EnterPage1 from "../pages/store-tablet/enter/page1/enterPage1";
+import EnterPage1 from "../pages/store-tablet/enter/page1/EnterPage1";
 import StoreSetting from "../pages/admin/setting/store-setting/StoreSetting";
 import CrowdSetting from "../pages/admin/setting/crowd-setting/CrowdSetting";
+import EnterPage2 from "../pages/store-tablet/enter/page2/EnterPage2";
+import EnterPage2a from "../pages/store-tablet/enter/page2a/EnterPage2a";
 
 export default function AppRouter(): React.JSX.Element {
   return (
@@ -71,6 +73,8 @@ export default function AppRouter(): React.JSX.Element {
             <Route path="enter">
               <Route index element={<EnterPage1 />} />
               <Route path="page1" element={<EnterPage1 />} />
+              <Route path="page2" element={<EnterPage2 />} />
+              <Route path="page2a" element={<EnterPage2a/>} />
             </Route>
             <Route path="exit"></Route>
           </Route>
