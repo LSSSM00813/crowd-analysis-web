@@ -1,12 +1,21 @@
 import "./enterPage2.scss";
 import { useState } from "react";
 import { useZxing } from "react-zxing";
+import { QRResultCard, type QRResultCardProps } from "../../component/qr-result-card/QRResultCard";
 
 const EnterPage2 = () => {
-  const [result, setResult] = useState("");
+  const [results, setResults] = useState<QRResultCardProps[]>([]);
   const { ref } = useZxing({
     onDecodeResult(result) {
-      setResult(result.getText());
+      const text = result.getText();
+
+      // 重複しない場合のみ追加      
+      setResults(prev =>
+        prev.some(item => item.name === text)
+          ? prev
+          : [...prev, { personNumber: prev.length + 1, name: text }]
+      );
+
     },
     constraints: {
       video: {
@@ -17,11 +26,21 @@ const EnterPage2 = () => {
 
   return (
     <div className="page-enter-2">
-      <video ref={ref} />
-      <p>
-        <span>Last result:</span>
-        <span>{result}</span>
-      </p>
+      <div className="flex-box">
+        <div className="flex-left">
+          {results.map((item) => (
+            <QRResultCard
+              key={item.personNumber}
+              personNumber={item.personNumber}
+              name={item.name}
+            />
+          ))}
+        </div>
+
+        <div className="flex-right">
+          <video ref={ref} />
+        </div>
+      </div>
     </div>
   );
 };

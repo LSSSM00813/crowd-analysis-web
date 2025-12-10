@@ -1,4 +1,3 @@
-import { TabletFotter } from "../../pages/store-tablet/component/tablet-fotter/TabletFotter";
 import "./storeTabletLayout.scss"
 import { Outlet } from "react-router-dom";
 
@@ -8,7 +7,6 @@ const StoreTabletLayout: React.FC = () => {
       <div className="content">
         <Outlet />
       </div>
-      <TabletFotter />
     </div>
   );
 };

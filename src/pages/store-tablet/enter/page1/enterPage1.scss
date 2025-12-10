@@ -12,18 +12,37 @@
         margin: 0;
     }
 
-    .btn-container {
+    .page-content {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        flex: 1;
         width: 100%;
-        gap: 40px;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
 
-        margin-top: 20px;
+        // background-color: black;
 
-        button {
-            height: 150px;
-            width: 40%;
-            border-radius: 5px;
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 40px;
+
+            margin-top: 20px;
+
+            button {
+                height: 200px;
+                width: 40%;
+                font-size: 40px;
+                border-radius: 5px;
+            }
         }
+
+    }
+
+    .tablet-fotter {
+        width: 100%;
     }
 }
