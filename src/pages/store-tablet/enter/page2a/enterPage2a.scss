@@ -1,0 +1,108 @@
+.page-enter-2a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .flex-box {
+        display: flex;
+        flex: 1;
+        padding-bottom: 10px;
+
+        .flex-left {
+            flex: 1;
+            padding: 0px 50px 0px 50px;
+        }
+
+        .flex-right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0px 50px 0px 0px;
+            height: 100%;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .input-gender,
+    .input-age-category {
+        display: flex;
+        margin-bottom: 50px;
+
+        div {
+            position: relative;
+            flex: 1;
+            border: 1px solid #b6b6b6;
+            margin-right: 2px;
+
+            input {
+                width: 100%;
+                height: 60px;
+
+                &:checked+label {
+                    background: #007EA1;
+                    font-weight: 500;
+                    color: #fff;
+                }
+            }
+
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #b6b6b6;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                pointer-events: none;
+            }
+        }
+
+    }
+
+    .input-key-number {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: large;
+
+        input {
+            flex: 1;
+            margin-left: 5px;
+            padding: 5px;
+            outline: none;
+        }
+    }
+
+    .btn-add {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            align-self: flex-end;
+            min-width: 20%;
+        }
+    }
+
+    .list {
+        border: 1px solid #b6b6b6;
+        flex: 1;
+    }
+
+    .btn-delete-edit {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+
+        button {
+            min-width: 20%;
+        }
+    }
+}
